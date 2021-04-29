@@ -1,6 +1,6 @@
 <?php include('config.php'); ?>
 <?php include('includes/public_functions.php'); ?>
-<?php include('includes/head_section.php'); ?>
+<?php include('includes/head_section.php') ?>
 <?php
 // Get posts under a particular topic
 if (isset($_GET['topic'])) {
@@ -14,7 +14,7 @@ if (isset($_GET['topic'])) {
 <body>
     <div class="container">
         <!-- Navbar -->
-        <?php include(ROOT_PATH . '../includes/navbar.php'); ?>
+        <?php include(ROOT_PATH . '/includes/navbar.php'); ?>
         <!-- // Navbar -->
         <!-- content -->
         <div class="content">
@@ -24,7 +24,7 @@ if (isset($_GET['topic'])) {
             <hr>
             <?php foreach ($posts as $post) : ?>
                 <div class="post" style="margin-left: 0px;">
-                    <img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
+                    <img src="<?php echo BASE_URL . '/src/images/' . $post['image']; ?>" class="post_image" alt="">
                     <a href="single_post.php?post-slug=<?php echo $post['slug']; ?>">
                         <div class="post_info">
                             <h3><?php echo $post['title'] ?></h3>

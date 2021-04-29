@@ -57,4 +57,4 @@ $topics = getAllTopics();
     </div>
     <!-- // content -->
 
-    <?php include(ROOT_PATH . '/includes/footer.php'); ?>
+    <?php include(ROOT_PATH . '../includes/footer.php'); ?>
